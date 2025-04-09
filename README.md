@@ -9,9 +9,9 @@ A simple custom Power bi connector that uses the authentication_token flow to co
 5. Install the Power Query SDK extension for VS Code: https://marketplace.visualstudio.com/items?itemName=PowerQuery.vscode-powerquery-sdk
 6. Clone this repository
 7. Open the root folder of the repository in VS Code
-8. Enter the client id obtained in (1) into file client_id.txt and the client secret obtained in (1) into file client_secret.txt
+8. Enter the client id obtained in (1) into file `client_id.txt` and the client secret obtained in (1) into file `client_secret.txt`
 9. Run Set Credential function - for it to succeed you'll need to sign in with your UB username and password.  You'll then need to consent to access to UB by your client application
-10. Run the TestConnection function to build and test the PowerBI connector mez file.
+10. Run the TestConnection function to build and test the PowerBI connector .mez file.
 11. Copy the PowerBI connector mez file from `<repository-root>/bin/AnyCPU/Debug/UtiliboxApiV1PowerBiConnector.mez` to your local Power BI Desktop "Custom Connectors" directory (usually `<user>/Documents/Power BI Desktop/Custom Connectors`)
 12. Give the gateway service account (by default `NT SERVICE\PBIEgwService`)read permissions on the local Power BI Desktop "Custom Connectors" directory (usually `<user>/Documents/Power BI Desktop/Custom Connectors`).
 13. Add the custom data connector to the on-premises data gateway by pointing it to load custom data connectors from the folder where your connector is located.
