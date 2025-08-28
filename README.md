@@ -50,4 +50,4 @@ tools\PQTest.exe test-connection
 14. Launch Power BI
 15. Adjust the data extension security settings to allow custom data connectors.  In Power BI Desktop, select `File > Options and settings > Options > Security`. Under `Data Extensions`, select `(Not Recommended) Allow any extension to load without validation or warning`. Select `OK`, and then restart Power BI Desktop.
 16. In Power BI - create a blank report > "Get data from another source" in the "Get Data" dialog that pops up, search for "Utilibox" and select `UtiliboxApiV1PowerBiConnector (Beta) (Custom)` > click `Continue`
-17. In the fx box, replace null with the an example url of the UB V1 API endpoint to test `= UtiliboxApiV1PowerBiConnector.Contents(null)` => `= UtiliboxApiV1PowerBiConnector.Contents("https://eaxapi.utilibox.tech/v1/organizations")`
+17. In the fx box, replace null with the an example url of the UB V1 API endpoint to test `= UtiliboxApiV1PowerBiConnector.Contents(null)` => `= UtiliboxApiV1PowerBiConnector.Contents("https://eaxapi.utilibox.tech/v1/companies")`
