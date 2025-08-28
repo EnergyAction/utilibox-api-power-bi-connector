@@ -13,8 +13,8 @@ A simple custom Power bi connector that uses the authentication_token flow to co
 9. Run Set Credential function - for it to succeed you'll need to sign in with your UB username and password.  The console should show something like this when you initiate this:
 ```
 tools\PQTest.exe set-credential
-				--extension "c:\Users\clint.irving\source\repos\UtiliboxApiV1PowerBiConnector\bin\AnyCPU\Debug\UtiliboxApiV1PowerBiConnector.mez"
-				--queryFile "c:\Users\clint.irving\source\repos\UtiliboxApiV1PowerBiConnector\UtiliboxApiV1PowerBiConnector.query.pq"
+				--extension "UtiliboxApiV1PowerBiConnector\bin\AnyCPU\Debug\UtiliboxApiV1PowerBiConnector.mez"
+				--queryFile "UtiliboxApiV1PowerBiConnector\UtiliboxApiV1PowerBiConnector.query.pq"
 				--prettyPrint
 				-ak "OAuth"
 				--interactive
@@ -35,8 +35,8 @@ it should then launch a login window where you can enter your username and passw
 10. Run the TestConnection function to build and test the PowerBI connector .mez file.  The console should show something like this when you initiate it:
 ```
 tools\PQTest.exe test-connection
-				--extension "c:\Users\clint.irving\source\repos\UtiliboxApiV1PowerBiConnector\bin\AnyCPU\Debug\UtiliboxApiV1PowerBiConnector.mez"
-				--queryFile "c:\Users\clint.irving\source\repos\UtiliboxApiV1PowerBiConnector\UtiliboxApiV1PowerBiConnector.query.pq"
+				--extension "UtiliboxApiV1PowerBiConnector\bin\AnyCPU\Debug\UtiliboxApiV1PowerBiConnector.mez"
+				--queryFile "UtiliboxApiV1PowerBiConnector\UtiliboxApiV1PowerBiConnector.query.pq"
 				--prettyPrint
 [Info]	TestConnection result {
     "Details": "UtiliboxApiV1PowerBiConnector.Contents(null)",
