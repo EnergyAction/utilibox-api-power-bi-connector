@@ -32,11 +32,11 @@ it should then launch a login window where you can enter your username and passw
     "Status": "Success"
 }
 ```
-11. Run the TestConnection function to build and test the PowerBI connector .mez file.
-12. Copy the PowerBI connector mez file from `<repository-root>/bin/AnyCPU/Debug/UtiliboxApiV1PowerBiConnector.mez` to your local Power BI Desktop "Custom Connectors" directory (usually `<user>/Documents/Power BI Desktop/Custom Connectors`)
-13. Give the gateway service account (by default `NT SERVICE\PBIEgwService`)read permissions on the local Power BI Desktop "Custom Connectors" directory (usually `<user>/Documents/Power BI Desktop/Custom Connectors`).
-14. Add the custom data connector to the on-premises data gateway by pointing it to load custom data connectors from the folder where your connector is located.
-15. Launch Power BI
-16. Adjust the data extension security settings to allow custom data connectors.  In Power BI Desktop, select `File > Options and settings > Options > Security`. Under `Data Extensions`, select `(Not Recommended) Allow any extension to load without validation or warning`. Select `OK`, and then restart Power BI Desktop.
-17. In Power BI - create a blank report > "Get data from another source" in the "Get Data" dialog that pops up, search for "Utilibox" and select `UtiliboxApiV1PowerBiConnector (Beta) (Custom)` > click `Continue`
-18. In the fx box, replace null with the an example url of the UB V1 API endpoint to test `= UtiliboxApiV1PowerBiConnector.Contents(null)` => `= UtiliboxApiV1PowerBiConnector.Contents("https://eaxapi.utilibox.tech/v1/organizations")`
+10. Run the TestConnection function to build and test the PowerBI connector .mez file.
+11. Copy the PowerBI connector mez file from `<repository-root>/bin/AnyCPU/Debug/UtiliboxApiV1PowerBiConnector.mez` to your local Power BI Desktop "Custom Connectors" directory (usually `<user>/Documents/Power BI Desktop/Custom Connectors`)
+12. Give the gateway service account (by default `NT SERVICE\PBIEgwService`)read permissions on the local Power BI Desktop "Custom Connectors" directory (usually `<user>/Documents/Power BI Desktop/Custom Connectors`).
+13. Add the custom data connector to the on-premises data gateway by pointing it to load custom data connectors from the folder where your connector is located.
+14. Launch Power BI
+15. Adjust the data extension security settings to allow custom data connectors.  In Power BI Desktop, select `File > Options and settings > Options > Security`. Under `Data Extensions`, select `(Not Recommended) Allow any extension to load without validation or warning`. Select `OK`, and then restart Power BI Desktop.
+16. In Power BI - create a blank report > "Get data from another source" in the "Get Data" dialog that pops up, search for "Utilibox" and select `UtiliboxApiV1PowerBiConnector (Beta) (Custom)` > click `Continue`
+17. In the fx box, replace null with the an example url of the UB V1 API endpoint to test `= UtiliboxApiV1PowerBiConnector.Contents(null)` => `= UtiliboxApiV1PowerBiConnector.Contents("https://eaxapi.utilibox.tech/v1/organizations")`
