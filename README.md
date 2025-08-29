@@ -55,3 +55,4 @@ tools\PQTest.exe test-connection
     `= UtiliboxApiV1PowerBiConnector.Contents(null)`
     to
     `= UtiliboxApiV1PowerBiConnector.Contents("https://eaxapi.utilibox.tech/v1/companies")`
+18. For endpoints please visit the V1 documentation here: https://eaxapi.utilibox.tech/v1/swagger/index.html
